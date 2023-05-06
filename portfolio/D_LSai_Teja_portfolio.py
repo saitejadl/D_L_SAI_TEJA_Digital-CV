@@ -117,7 +117,7 @@ st.write("---")
 # --- JOB 3
 st.write('\n')
 st.write("🚧", """[Regression with a Tabular Paris Housing Price Dataset] | Kaggle competition – Playground Series 3 Episode 6""")
-st.markdown("**:blue["Rank: 40th of 703 | Top 6%"]**")
+st.markdown("**:blue[Rank: 40th of 703 | Top 6%]**")
 st.write(
     """
 - ► Purpose: To predict the price of houses in Paris
