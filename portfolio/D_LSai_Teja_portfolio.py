@@ -15,22 +15,23 @@ PAGE_TITLE = "Digital CV | LAKSHMI SAI TEJA DHARMADA"
 PAGE_ICON = "🧑‍💻"
 NAME = "LAKSHMI SAI TEJA DHARMADA"
 DESCRIPTION = """
-Data Scientist | Data Engineer
+Data Scientist | Machine Learning Engineer | Data Engineer
 """
 EMAIL = "dlsaiteja2822@gmail.com"
 SOCIAL_MEDIA = {
-    "LinkedIn : https://linkedin.com": "https://linkedin.com",
-    "GitHub : https://github.com": "https://github.com",
-    "Kaggle : https://www.kaggle.com/saitejadharmada": "https://www.kaggle.com/saitejadharmada"
+    "LinkedIn: https://linkedin.com": "https://linkedin.com",
+    "GitHub: https://github.com": "https://github.com",
+    "Kaggle: https://www.kaggle.com/saitejadharmada": "https://www.kaggle.com/saitejadharmada"
 }
 PROJECTS = {
-    """🏆 Design and Fabrication of AI based EV - Design and Fabrication of Artificial Intelligence based Electric Vehicle. Designing and Fabricating an Electric Vehicle which will drive semi autonomously with minimum human interface.
-                                Designing structure of the Vehicle for efficient load carrying.
-                                Positioning mechanical, electrical and electronic components maintaining load balance.
-                                Installed Raspberry Pi 4, relay circuit and ultrasonic sensors for detecting obstacles and navigate passengers to go in safe direction.""":'.',
-    """🏆 Personal Voice Assistant - virtual assistant that can do various things such as tell the time, play music on YouTube, send messages on WhatsApp, search the web, and open applications on your computer, among others.
-                                It uses various APIs such as SpeechRecognition, Pyttsx3, PyWhatKit, Wikipedia, and OpenAI.
-                                it will ask for a password. If the password is correct, it will start listening for commands. You can ask it to perform various tasks, and it will respond accordingly.""":'.',
+    """🏆 Design and Fabrication of AI-Based Electric Vehicles Designing and Fabricating an Electric Vehicle (AIEV) that will drive semi-autonomously with the minimum human interface.                               
+                               Vehicle structure design for efficient load carry. 
+                               Maintaining load balance by positioning mechanical, electrical, and electronic components.
+                               Installed a Raspberry Pi 4 Model B, a relay circuit, and ultrasonic sensors for detecting obstacles and navigating passengers in a safe direction. """:'.',
+ 
+    """🏆 Personal Voice Assistant: a virtual assistant that can do various things such as tell the time, play music on YouTube, send messages on WhatsApp, search the web, and open applications on your computer, among others.
+                                It uses various APIs such as SpeechRecognition, Pyttsx3, PyWhatKit, Wikipedia, and OpenAI.
+                                It will prompt you for a password. If the password is correct, it will start listening for commands. You can ask it to perform various tasks, and it will respond accordingly. """:'.',
 }
 
 
@@ -77,11 +78,11 @@ st.write('\n')
 st.subheader("Qulifications")
 st.write(
     """
-- \t\t✔️ XII : Sri Chaitanya Juniour Collage \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCGPA : 9.1, YOP : 2018
-- \t\t✔️ UG : Bonam Venkata Chalamayya Institution of Technology and Science Amalapuram - JNTUK\t\t\t\t\tCGPA : 7.04, YOP : 2022.
-- \t\t✔️ PGP :Post Graduation Program in Computational Datascience - Upgrade INSOFE\t\t\t\t\t\t\t\tDuration : May 2022 - April 2023
-- Excellent team-player and displaying strong sense of initiative on tasks
-- Strong Communication and presentation skills
+- \t\t✔️ XII: Sri Chaitanya Juniour Collage \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCGPA: 9.1, YOP: 2018
+- \t\t✔️ UG: Bonam Venkata Chalamayya Institution of Technology and Science Amalapuram - JNTUK\t\t\t\t\tCGPA: 7.04, YOP: 2022.
+- \t\t✔️ PGP: Post Graduation Program in Computational Datascience (upGrad INSOFE)\t\t\t\t\t\t\t\tDuration: May 2022–April 2023
+- Excellent team player and displaying a strong sense of initiative on tasks
+- Strong communication and presentation skills
 """
 )
 
@@ -110,8 +111,22 @@ st.write('\n')
 st.write('\n')
 st.write('\n')
 st.write('\n')
-st.subheader("Compititions")
+st.subheader("Competitions")
 st.write("---")
+
+# --- JOB 3
+st.write('\n')
+st.write("🚧", """[Regression with a Tabular Paris Housing Price Dataset] | Kaggle competition – Playground Series 3 Episode 6""")
+st.markdown(**:blue["***Rank: 40th of 703 | Top 6%***"]**)
+st.write(
+    """
+- ► Purpose: To predict the price of houses in Paris
+- ► Conducted data cleaning and pre-processing along with visualization
+- ► Analyzed various attributes (house features) and their relation with target (house price)
+- ► Constructed various machine learning regression models
+"""
+)
+
 
 # --- JOB 1
 st.write("🚧", """**[Binary Classification with a Tabular Credit Card Fraud Dataset]** | Kaggle competition – Playground Series 3 Episode 4""")
@@ -136,28 +151,12 @@ st.write(
 """
 )
 
-# --- JOB 3
-st.write('\n')
-st.write("🚧", """[Regression with a Tabular Paris Housing Price Dataset] | Kaggle competition – Playground Series 3 Episode 6""")
-st.write("Rank: 40th of 703 | Top 6%")
-st.write(
-    """
-- ► Purpose: To predict the price of houses in Paris
-- ► Conducted data cleaning and pre-processing along with visualization
-- ► Analyzed various attributes (house features) and their relation with target (house price)
-- ► Constructed various machine learning regression models
-"""
-)
-
-
-
-
 # --- Projects & Accomplishments ---
 st.write('\n')
 st.write('\n')
 st.write('\n')
 st.write('\n')
-st.subheader("Projects & Accomplishments")
+st.subheader("Projects and Accomplishments")
 st.write("---")
 for project, link in PROJECTS.items():
     st.write(f"[{project}]({link})")
