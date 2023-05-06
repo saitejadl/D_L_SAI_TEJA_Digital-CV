@@ -25,9 +25,9 @@ SOCIAL_MEDIA = {
 }
 PROJECTS = {
     """🏆 Design and Fabrication of AI-Based Electric Vehicles Designing and Fabricating an Electric Vehicle (AIEV) that will drive semi-autonomously with the minimum human interface.                               
--                               Vehicle structure design for efficient load carry. 
--                               Maintaining load balance by positioning mechanical, electrical, and electronic components.
--                               Installed a Raspberry Pi 4 Model B, a relay circuit, and ultrasonic sensors for detecting obstacles and navigating passengers in a safe direction. """:'.',
+*                               Vehicle structure design for efficient load carry. 
+*                               Maintaining load balance by positioning mechanical, electrical, and electronic components.
+*                               Installed a Raspberry Pi 4 Model B, a relay circuit, and ultrasonic sensors for detecting obstacles and navigating passengers in a safe direction. """:'.',
  
     """🏆 Personal Voice Assistant: a virtual assistant that can do various things such as tell the time, play music on YouTube, send messages on WhatsApp, search the web, and open applications on your computer, among others.
  -                               It uses various APIs such as SpeechRecognition, Pyttsx3, PyWhatKit, Wikipedia, and OpenAI.
