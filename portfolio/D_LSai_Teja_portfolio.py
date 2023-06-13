@@ -30,7 +30,7 @@ PROJECTS = {
 }
 
 
-st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON,layout="wide")
+st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON,layout="center")
 
 
 # --- LOAD CSS, PDF & PROFIL PIC ---
