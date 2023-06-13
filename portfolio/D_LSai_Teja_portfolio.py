@@ -24,9 +24,9 @@ SOCIAL_MEDIA = {
     "Kaggle: https://www.kaggle.com/saitejadharmada": "https://www.kaggle.com/saitejadharmada"
 }
 PROJECTS = {
-    """🏆 Design and Fabrication of AI-Based Electric Vehicles Designing and Fabricating an Electric Vehicle (AIEV) that will drive semi-autonomously with the minimum human interface. Vehicle structure design for efficient load carry. Maintaining load balance by positioning mechanical, electrical, and electronic components. Installed a Raspberry Pi 4 Model B, a relay circuit, and ultrasonic sensors for detecting obstacles and navigating passengers in a safe direction. """:'.',
+    """🏆 Design and Fabrication of AI-Based Electric Vehicles: Designing and Fabricating an Electric Vehicle (AIEV) that will drive semi-autonomously with the minimum human interface. Vehicle structure design for efficient load carry. Maintaining load balance by positioning mechanical, electrical, and electronic components. Installed a Raspberry Pi 4 Model B, a relay circuit, and ultrasonic sensors for detecting obstacles and navigating passengers in a safe direction. """:'.',
  
-    """🏆 Personal Voice Assistant: a virtual assistant that can do various things such as tell the time, play music on YouTube, send messages on WhatsApp, search the web, and open applications on your computer, among others. It uses various APIs such as SpeechRecognition, Pyttsx3, PyWhatKit, Wikipedia, and OpenAI. It will prompt you for a password. If the password is correct, it will start listening for commands. You can ask it to perform various tasks, and it will respond accordingly. """:'.'
+    """🏆 Personal Voice Assistant: A virtual assistant that can do various things such as tell the time, play music on YouTube, send messages on WhatsApp, search the web, and open applications on your computer, among others. It uses various APIs such as SpeechRecognition, Pyttsx3, PyWhatKit, Wikipedia, and OpenAI. It will prompt you for a password. If the password is correct, it will start listening for commands. You can ask it to perform various tasks, and it will respond accordingly. """:'.'
 }
 
 
@@ -155,7 +155,7 @@ st.write('\n')
 st.subheader("Projects and Accomplishments")
 st.write("---")
 for project, link in PROJECTS.items():
-    st.write(f"[{project+"-:"}]({link})")
+    st.write(f"[{project}]({link})")
 
 
 # --- Hobbies ---
