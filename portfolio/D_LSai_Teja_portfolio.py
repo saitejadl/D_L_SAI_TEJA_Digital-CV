@@ -19,7 +19,7 @@ Data Scientist | Machine Learning Engineer | Data Engineer
 """
 EMAIL = "dlsaiteja2822@gmail.com"
 SOCIAL_MEDIA = {
-    "LinkedIn: http://www.linkedin.com/in/lakshmisaitejadharmadam": "http://www.linkedin.com/in/lakshmisaitejadharmada",
+    "LinkedIn: http://www.linkedin.com/in/lakshmisaitejadharmada": "http://www.linkedin.com/in/lakshmisaitejadharmada",
     "GitHub: https://github.com/saitejadl": "https://github.com/saitejadl",
     "Kaggle: https://www.kaggle.com/saitejadharmada": "https://www.kaggle.com/saitejadharmada"
 }
