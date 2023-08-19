@@ -13,9 +13,13 @@ url3 = requests.get("https://lottie.host/06f5e545-8301-4537-8906-a3b020124e47/0x
 # url_json3 = dict()
 if url1.status_code == 200:
     url_json1 = url1.json()
-elif url2.status_code == 200:
+else:
+    print("URL ERROR")
+if url2.status_code == 200:
     url_json2 = url2.json()
-elif url3.status_code == 200:
+else:
+    print("URL ERROR")
+if url3.status_code == 200:
     url_json3 = url3.json()
 else:
     print("URL ERROR")
