@@ -150,7 +150,7 @@ st.write('\n')
 st.write('\n')
 st.write('\n')
 st.write('\n')
-st.subheader("Competitions")
+st.subheader("                                                                                                  Competitions")
 comp1,comp2 = st.columns([2,6],gap='medium')
 with comp1:
     st_lottie(url_json5)
@@ -201,7 +201,7 @@ st.write('\n')
 st.subheader("Projects and Accomplishments")
 st.write("---")
 
-proj1, proj2 = st.columns(2,gap='medium')
+proj1, proj2 = st.columns([6,2],gap='medium')
 with proj1:
     for project, link in PROJECTS.items():
         st.write(f"[{project}]({link})")
