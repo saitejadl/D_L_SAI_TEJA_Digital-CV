@@ -9,6 +9,7 @@ url1 = requests.get("https://lottie.host/ab8c54f3-73f2-474e-8f68-39b61d23773e/59
 url2 = requests.get("https://lottie.host/9f77b3ed-249b-4a6b-b073-62fcab040355/icvb7xsEBV.json")
 url3 = requests.get("https://lottie.host/06f5e545-8301-4537-8906-a3b020124e47/0xwBQKW2an.json")
 url4 = requests.get("https://lottie.host/ae7aa634-b616-4613-8171-e2ebb18641c3/Z5GYzAxlYE.json")
+url5 = requests.get("https://lottie.host/501a1638-888d-4d34-aa84-513513a38454/m23HdBnRK5.json")
 # url_json1 = dict()
 # url_json2 = dict()
 # url_json3 = dict()
@@ -26,6 +27,10 @@ else:
     print("URL ERROR")
 if url4.status_code == 200:
     url_json4 = url4.json()
+else:
+    print("URL ERROR")
+if url5.status_code == 200:
+    url_json5 = url5.json()
 else:
     print("URL ERROR")
 
@@ -144,44 +149,47 @@ st.write('\n')
 st.write('\n')
 st.subheader("Competitions")
 st.write("---")
-
-# --- JOB 3
-st.write('\n')
-st.write("🚧","[Regression with a Tabular Paris Housing Price Dataset] | Kaggle competition – Playground Series 3 Episode 6")
-
-st.markdown("""[**:blue[Rank: 40th of 703 | Top 6%]**](https://www.kaggle.com/competitions/playground-series-s3e6/leaderboard?search=sai+teja+dharmada)""")
-st.write(
+comp11,comp2 = st.columns(3)
+with comp1:
+    st_lottie(url_json5)
+with comp2:
+    # --- JOB 3
+    st.write('\n')
+    st.write("🚧","[Regression with a Tabular Paris Housing Price Dataset] | Kaggle competition – Playground Series 3 Episode 6")
+    
+    st.markdown("""[**:blue[Rank: 40th of 703 | Top 6%]**](https://www.kaggle.com/competitions/playground-series-s3e6/leaderboard?search=sai+teja+dharmada)""")
+    st.write(
+        """
+    - ► Purpose: To predict the price of houses in Paris
+    - ► Conducted data cleaning and pre-processing along with visualization
+    - ► Analyzed various attributes (house features) and their relation with target (house price)
+    - ► Constructed various machine learning regression models
     """
-- ► Purpose: To predict the price of houses in Paris
-- ► Conducted data cleaning and pre-processing along with visualization
-- ► Analyzed various attributes (house features) and their relation with target (house price)
-- ► Constructed various machine learning regression models
-"""
-)
+    )
 
 
-# --- JOB 1
-st.write("🚧", """**[Binary Classification with a Tabular Credit Card Fraud Dataset]** | Kaggle competition – Playground Series 3 Episode 4""")
-st.write("[Rank: 441th of 641 | Top 68%](https://www.kaggle.com/competitions/playground-series-s3e4/leaderboard?tab=public&search=D+Lakshmi+Sai+Teja)")
-st.write(
+    # --- JOB 1
+    st.write("🚧", """**[Binary Classification with a Tabular Credit Card Fraud Dataset]** | Kaggle competition – Playground Series 3 Episode 4""")
+    st.write("[Rank: 441th of 641 | Top 68%](https://www.kaggle.com/competitions/playground-series-s3e4/leaderboard?tab=public&search=D+Lakshmi+Sai+Teja)")
+    st.write(
+        """
+    - ► Purpose: To predict whether a credit card transaction is fraudulent or not
+    - ► Handled severely imbalanced data and built various supervised machine learning classification algorithms
     """
-- ► Purpose: To predict whether a credit card transaction is fraudulent or not
-- ► Handled severely imbalanced data and built various supervised machine learning classification algorithms
-"""
-)
-
-# --- JOB 2
-st.write('\n')
-st.write("🚧", """[Ordinal Regression with a Tabular Wine Quality Dataset] | Kaggle competition – Playground Series 3 Episode 5""")
-st.write("[Rank: 255th of 901 | Top 29%](https://www.kaggle.com/competitions/playground-series-s3e5/leaderboard?search=D+Lakshmi+Sai+Teja)")
-st.write(
+    )
+    
+    # --- JOB 2
+    st.write('\n')
+    st.write("🚧", """[Ordinal Regression with a Tabular Wine Quality Dataset] | Kaggle competition – Playground Series 3 Episode 5""")
+    st.write("[Rank: 255th of 901 | Top 29%](https://www.kaggle.com/competitions/playground-series-s3e5/leaderboard?search=D+Lakshmi+Sai+Teja)")
+    st.write(
+        """
+    - ► Purpose: To predict the Wine Quality
+    - ► Conducted data cleaning and pre-processing along with visualization
+    - ► Feature Engineering of chemical properties to reduce dimensions of data
+    - ► Constructed various machine learning classification models
     """
-- ► Purpose: To predict the Wine Quality
-- ► Conducted data cleaning and pre-processing along with visualization
-- ► Feature Engineering of chemical properties to reduce dimensions of data
-- ► Constructed various machine learning classification models
-"""
-)
+    )
 
 # --- Projects & Accomplishments ---
 st.write('\n')
