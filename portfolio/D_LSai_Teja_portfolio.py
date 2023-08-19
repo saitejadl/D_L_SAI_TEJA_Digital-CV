@@ -128,7 +128,7 @@ st.write('\n')
 st.write('\n')
 st.write('\n')
 st.write('\n')
-skill1,skill2,skill3 = st.columns(3)
+skill1,skill2 = st.columns([4,2],gap='medium')
 with skill1:
     st.subheader("Hard Skills")
     st.write(
