@@ -72,8 +72,8 @@ cols = st.columns([3,2,3])#len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
 
-anim1,anim2 = st.columns(2)
-with anim1:
+anim1,anim2,anim3 = st.columns(3)
+with anim2:
     st_lottie(url_json)
 
 # --- QUALIFICATIONS ---
