@@ -9,8 +9,8 @@ url1 = requests.get("https://lottie.host/ab8c54f3-73f2-474e-8f68-39b61d23773e/59
 url2 = requests.get("https://lottie.host/9f77b3ed-249b-4a6b-b073-62fcab040355/icvb7xsEBV.json")
 url3 = requests.get("https://lottie.host/06f5e545-8301-4537-8906-a3b020124e47/0xwBQKW2an.json")
 url4 = requests.get("https://lottie.host/ae7aa634-b616-4613-8171-e2ebb18641c3/Z5GYzAxlYE.json")
-url5 = requests.get("https://lottie.host/501a1638-888d-4d34-aa84-513513a38454/m23HdBnRK5.json")
-url6 = requests.get("https://lottie.host/7a015171-0629-4558-8dbc-8d48c015e749/CrAiAgMWZv.json")
+url5 = requests.get("https://lottie.host/7a015171-0629-4558-8dbc-8d48c015e749/CrAiAgMWZv.json")
+url6 = requests.get("https://lottie.host/501a1638-888d-4d34-aa84-513513a38454/m23HdBnRK5.json")
 
 
 # url_json1 = dict()
@@ -156,9 +156,9 @@ st.write('\n')
 st.write('\n')
 st.subheader("Competitions")
 st.write("---")
-comp1,comp2 = st.columns([3,6])
+comp1,comp2 = st.columns([2,6])
 with comp1:
-    st_lottie(url_json6)
+    st_lottie(url_json5)
 with comp2:
     # --- JOB 3
     st.write('\n')
@@ -205,8 +205,13 @@ st.write('\n')
 st.write('\n')
 st.subheader("Projects and Accomplishments")
 st.write("---")
-for project, link in PROJECTS.items():
-    st.write(f"[{project}]({link})")
+
+proj1, proj2 = st.columns(2)
+with proj1:
+    for project, link in PROJECTS.items():
+        st.write(f"[{project}]({link})")
+with proj2:
+    st_lottie(url_json6)
 
 
 # --- Hobbies ---
