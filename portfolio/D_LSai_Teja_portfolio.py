@@ -12,7 +12,7 @@ if url.status_code == 200:
 else:
     print("URL ERROR")
 
-anim1,anim2 = st.columns(1, gap="medium")
+anim1,anim2 = st.columns(2)
 with anim1:
     st_lottie(url_json)
 with anim2:
