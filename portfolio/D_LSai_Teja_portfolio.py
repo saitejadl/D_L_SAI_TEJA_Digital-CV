@@ -1,6 +1,19 @@
 from pathlib import Path
 import streamlit as st
 from PIL import Image
+import json
+import requests
+from streamlit_lottie import st_lottie
+
+url = requests.get(
+    "https://assets2.lottiefiles.com/packages/lf20_mDnmhAgZkb.json")
+# Creating a blank dictionary to store JSON file,
+# as their structure is similar to Python Dictionary
+url_json = dict()
+  
+if url.status_code == 200:
+    url_json = url.json()
+st_lottie(url_json)
 
 
 # --- PATH SETTINGS ---
@@ -172,6 +185,5 @@ st.write("""
 - Gardening 🌱
     """)
 
-# https://saitejadl-d-l-sai-teja-di-portfoliod-lsai-teja-portfolio-3pw838.streamlit.app/
-
+ 
 # https://docs.google.com/presentation/d/1jrDigbMfp_wxzW7Eyu1jHRl0gkBYqv1c/edit?usp=share_link&ouid=110531620878687336760&rtpof=true&sd=true
