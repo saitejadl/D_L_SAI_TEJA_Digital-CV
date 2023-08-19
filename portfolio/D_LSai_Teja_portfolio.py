@@ -1,4 +1,4 @@
- from pathlib import Path
+from pathlib import Path
 import streamlit as st
 from PIL import Image
 import json
@@ -149,7 +149,7 @@ st.write('\n')
 st.write('\n')
 st.write('\n')
 st.subheader("Competitions")
-comp1,comp2 = st.columns(2,6],gap='medium')
+comp1,comp2 = st.columns([[1,2],6],gap='medium')
 with comp1:
     st_lottie(url_json5)
 with comp2:
