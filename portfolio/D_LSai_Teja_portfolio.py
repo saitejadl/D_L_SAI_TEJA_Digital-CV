@@ -1,19 +1,19 @@
 from pathlib import Path
 import streamlit as st
 from PIL import Image
-import json
-import requests
-from streamlit_lottie import st_lottie
+# import json
+# import requests
+# from streamlit_lottie import st_lottie
 
-url = requests.get(
-    "https://assets2.lottiefiles.com/packages/lf20_mDnmhAgZkb.json")
-# Creating a blank dictionary to store JSON file,
-# as their structure is similar to Python Dictionary
-url_json = dict()
+# url = requests.get(
+#     "https://assets2.lottiefiles.com/packages/lf20_mDnmhAgZkb.json")
+# # Creating a blank dictionary to store JSON file,
+# # as their structure is similar to Python Dictionary
+# url_json = dict()
   
-if url.status_code == 200:
-    url_json = url.json()
-st_lottie(url_json)
+# if url.status_code == 200:
+#     url_json = url.json()
+# st_lottie(url_json)
 
 
 # --- PATH SETTINGS ---
