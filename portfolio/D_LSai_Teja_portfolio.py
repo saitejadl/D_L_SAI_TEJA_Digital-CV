@@ -149,7 +149,7 @@ st.write('\n')
 st.write('\n')
 st.subheader("Competitions")
 st.write("---")
-comp11,comp2 = st.columns(3)
+comp11,comp2 = st.columns(2)
 with comp1:
     st_lottie(url_json5)
 with comp2:
