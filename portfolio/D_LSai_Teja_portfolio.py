@@ -151,7 +151,7 @@ st.write('\n')
 st.write('\n')
 st.write('\n')
 st.subheader("                                                                                                  Competitions")
-comp1,comp2 = st.columns([2,6],gap='medium')
+comp1,comp2 = st.columns([4,6],gap='medium')
 with comp1:
     st_lottie(url_json5)
 with comp2:
