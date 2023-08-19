@@ -8,6 +8,7 @@ from streamlit_lottie import st_lottie
 url1 = requests.get("https://lottie.host/ab8c54f3-73f2-474e-8f68-39b61d23773e/59pKiMFRkL.json")
 url2 = requests.get("https://lottie.host/9f77b3ed-249b-4a6b-b073-62fcab040355/icvb7xsEBV.json")
 url3 = requests.get("https://lottie.host/06f5e545-8301-4537-8906-a3b020124e47/0xwBQKW2an.json")
+url4 = requests.get("https://lottie.host/ae7aa634-b616-4613-8171-e2ebb18641c3/Z5GYzAxlYE.json")
 # url_json1 = dict()
 # url_json2 = dict()
 # url_json3 = dict()
@@ -21,6 +22,10 @@ else:
     print("URL ERROR")
 if url3.status_code == 200:
     url_json3 = url3.json()
+else:
+    print("URL ERROR")
+if url4.status_code == 200:
+    url_json4 = url4.json()
 else:
     print("URL ERROR")
 
@@ -115,19 +120,22 @@ st.write('\n')
 st.write('\n')
 st.write('\n')
 st.write('\n')
-st.subheader("Hard Skills")
-st.write(
+skill1,skill2,skill3 = st.columns(3)
+with skill1:
+    st.subheader("Hard Skills")
+    st.write(
+        """
+    -	👩‍💻Programming: Python (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn), C, SQL
+    -	📊Data Analysis: Data Cleaning, Statistical Modeling, Data Visualization 
+    -	💻Machine Learning: Supervised learning, Unsupervised learning
+    -	🧿Deep Learning: ANN, CNN, RNN, [CV, NLP]
+    -	🪄Tools: My SQL, Git, Docker, Excel, Tableau
+    -   ⚙️OS: Windows, Linux
+    -   ☁️cloud services: AZURE
     """
--	👩‍💻Programming: Python (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn), C, SQL
--	📊Data Analysis: Data Cleaning, Statistical Modeling, Data Visualization 
--	💻Machine Learning: Supervised learning, Unsupervised learning
--	🧿Deep Learning: ANN, CNN, RNN, [CV, NLP]
--	🪄Tools: My SQL, Git, Docker, Excel, Tableau
--   ⚙️OS: Windows, Linux
--   ☁️cloud services: AZURE
-"""
-)
-
+    )
+with skill2:
+    st_lottie(url_json4)
 
 # --- Compititions---
 st.write('\n')
