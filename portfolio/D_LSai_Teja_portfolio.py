@@ -5,10 +5,16 @@ import json
 import requests
 from streamlit_lottie import st_lottie
 
-url = requests.get("https://lottie.host/ab8c54f3-73f2-474e-8f68-39b61d23773e/59pKiMFRkL.json")
-url_json = dict()
+url1 = requests.get("https://lottie.host/ab8c54f3-73f2-474e-8f68-39b61d23773e/59pKiMFRkL.json")
+url2 = requests.get("https://lottie.host/9f77b3ed-249b-4a6b-b073-62fcab040355/icvb7xsEBV.json")
+url3 = requests.get("https://lottie.host/06f5e545-8301-4537-8906-a3b020124e47/0xwBQKW2an.json")
+url_json1 = dict()
+url_json2 = dict()
+url_json3 = dict()
 if url.status_code == 200:
-    url_json = url.json()
+    url_json1 = url1.json()
+    url_json2 = url2.json()
+    url_json3 = url3.json()
 else:
     print("URL ERROR")
 
@@ -73,8 +79,13 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
 
 anim1,anim2,anim3 = st.columns(3)
+with anim1:
+    st_lottie(url_json1)
 with anim2:
-    st_lottie(url_json)
+    st_lottie(url_json2)
+with anim3:
+    st_lottie(url_json3)
+    
 
 # --- QUALIFICATIONS ---
 st.write('\n')
