@@ -5,14 +5,16 @@ import json
 import requests
 from streamlit_lottie import st_lottie
 
-url = requests.get("https://assets2.lottiefiles.com/packages/lf20_mDnmhAgZkb.json")
+url = requests.get("https://lottie.host/ab8c54f3-73f2-474e-8f68-39b61d23773e/59pKiMFRkL.json")
 url_json = dict()
 if url.status_code == 200:
     url_json = url.json()
 else:
     print("URL ERROR")
-st_lottie(url_json)
 
+col1 = st.columns(1, gap="medium")
+with col1:
+    st_lottie(url_json)
 
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
@@ -41,7 +43,7 @@ PROJECTS = {
 }
 
 
-# st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON,layout="wide")
+st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON,layout="wide")
 
 
 # --- LOAD CSS, PDF & PROFIL PIC ---
