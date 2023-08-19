@@ -8,9 +8,9 @@ from streamlit_lottie import st_lottie
 url1 = requests.get("https://lottie.host/ab8c54f3-73f2-474e-8f68-39b61d23773e/59pKiMFRkL.json")
 url2 = requests.get("https://lottie.host/9f77b3ed-249b-4a6b-b073-62fcab040355/icvb7xsEBV.json")
 url3 = requests.get("https://lottie.host/06f5e545-8301-4537-8906-a3b020124e47/0xwBQKW2an.json")
-url_json1 = dict()
-url_json2 = dict()
-url_json3 = dict()
+# url_json1 = dict()
+# url_json2 = dict()
+# url_json3 = dict()
 if url1.status_code == 200:
     url_json1 = url1.json()
 elif url2.status_code == 200:
