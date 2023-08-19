@@ -66,17 +66,15 @@ with col2:
     )
     st.write("📧", EMAIL)
 
-anim1 = st.columns(1)
-with anim1:
-    st_lottie(url_json)
-
-
 # --- SOCIAL LINKS ---
 st.write('\n')
 cols = st.columns([3,2,3])#len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
 
+anim1,anim2 = st.columns(2)
+with anim1:
+    st_lottie(url_json)
 
 # --- QUALIFICATIONS ---
 st.write('\n')
