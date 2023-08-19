@@ -11,11 +11,6 @@ url3 = requests.get("https://lottie.host/06f5e545-8301-4537-8906-a3b020124e47/0x
 url4 = requests.get("https://lottie.host/ae7aa634-b616-4613-8171-e2ebb18641c3/Z5GYzAxlYE.json")
 url5 = requests.get("https://lottie.host/7a015171-0629-4558-8dbc-8d48c015e749/CrAiAgMWZv.json")
 url6 = requests.get("https://lottie.host/501a1638-888d-4d34-aa84-513513a38454/m23HdBnRK5.json")
-
-
-# url_json1 = dict()
-# url_json2 = dict()
-# url_json3 = dict()
 if url1.status_code == 200:
     url_json1 = url1.json()
 else:
@@ -109,7 +104,6 @@ with anim2:
 with anim3:
     st_lottie(url_json3)
     
-
 # --- QUALIFICATIONS ---
 st.write('\n')
 st.write('\n')
@@ -155,12 +149,11 @@ st.write('\n')
 st.write('\n')
 st.write('\n')
 st.subheader("Competitions")
-st.write("---")
-comp1,comp2 = st.columns([1,2],6],gap='medium')
+comp1,comp2 = st.columns(2,6],gap='medium')
 with comp1:
     st_lottie(url_json5)
 with comp2:
-    # --- JOB 3
+    # --- comp 3
     st.write('\n')
     st.write("🚧","[Regression with a Tabular Paris Housing Price Dataset] | Kaggle competition – Playground Series 3 Episode 6")
     
@@ -175,7 +168,7 @@ with comp2:
     )
 
 
-    # --- JOB 1
+    # --- comp 1
     st.write("🚧", """**[Binary Classification with a Tabular Credit Card Fraud Dataset]** | Kaggle competition – Playground Series 3 Episode 4""")
     st.write("[Rank: 441th of 641 | Top 68%](https://www.kaggle.com/competitions/playground-series-s3e4/leaderboard?tab=public&search=D+Lakshmi+Sai+Teja)")
     st.write(
@@ -185,7 +178,7 @@ with comp2:
     """
     )
     
-    # --- JOB 2
+    # --- comp 2
     st.write('\n')
     st.write("🚧", """[Ordinal Regression with a Tabular Wine Quality Dataset] | Kaggle competition – Playground Series 3 Episode 5""")
     st.write("[Rank: 255th of 901 | Top 29%](https://www.kaggle.com/competitions/playground-series-s3e5/leaderboard?search=D+Lakshmi+Sai+Teja)")
