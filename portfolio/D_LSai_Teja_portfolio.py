@@ -12,12 +12,6 @@ if url.status_code == 200:
 else:
     print("URL ERROR")
 
-anim1,anim2 = st.columns(2)
-with anim1:
-    st_lottie(url_json)
-with anim2:
-    st_lottie(url_json)
-
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
@@ -71,6 +65,10 @@ with col2:
         mime="application/octet-stream",
     )
     st.write("📧", EMAIL)
+
+anim1 = st.columns(1)
+with anim1:
+    st_lottie(url_json)
 
 
 # --- SOCIAL LINKS ---
