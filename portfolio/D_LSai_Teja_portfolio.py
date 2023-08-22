@@ -90,13 +90,13 @@ cols = st.columns([3,2,3])#len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
 
-# anim1,anim2,anim3 = st.columns(3)
-# with anim1:
-#     st_lottie(url_json1)
-# with anim2:
-#     st_lottie(url_json2)
-# with anim3:
-#     st_lottie(url_json3)
+anim1,anim2,anim3 = st.columns(3)
+with anim1:
+    st_lottie(url_json1)
+with anim2:
+    st_lottie(url_json2)
+with anim3:
+    st_lottie(url_json3)
     
 st.write('\n')
 st.write('\n')
@@ -145,7 +145,7 @@ st.write('\n')
 st.subheader("                                                                                                  Competitions")
 comp1,comp2 = st.columns([3,6],gap='medium')
 with comp1:
-    # st_lottie(url_json5)
+    st_lottie(url_json5)
     pass
 with comp2:
     # --- comp 3
