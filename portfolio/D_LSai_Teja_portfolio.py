@@ -6,9 +6,9 @@ import json
 import requests
 from streamlit_lottie import st_lottie
 
-#-------Animation setup
-url1 = requests.get("https://lottie.host/ab8c54f3-73f2-474e-8f68-39b61d23773e/59pKiMFRkL.json")
-url2 = requests.get("https://lottie.host/9f77b3ed-249b-4a6b-b073-62fcab040355/icvb7xsEBV.json")
+#-------Animation setup 
+url1 = requests.get("https://lottie.host/ab8c54f3-73f2-474e-8f68-39b61d23773e/59pKiMFRkL.json")   #Hello guy animation
+url2 = requests.get("https://lottie.host/ce8d70b6-a826-4876-8509-0f91011c853e/2ItJ1yfD0h.json")   #variance animation https://lottie.host/9f77b3ed-249b-4a6b-b073-62fcab040355/icvb7xsEBV.json
 url3 = requests.get("https://lottie.host/06f5e545-8301-4537-8906-a3b020124e47/0xwBQKW2an.json")
 url4 = requests.get("https://lottie.host/ae7aa634-b616-4613-8171-e2ebb18641c3/Z5GYzAxlYE.json")
 url5 = requests.get("https://lottie.host/69e4c56b-7222-4ffa-bb68-716163925661/AQWWG59u9Y.json")
@@ -60,10 +60,6 @@ SOCIAL_MEDIA = {
     "GitHub: https://github.com/saitejadl": "https://github.com/saitejadl",
     "Kaggle: https://www.kaggle.com/saitejadharmada": "https://www.kaggle.com/saitejadharmada"
 }
-
-
-
-
 
 # --- LOAD CSS, PDF & PROFIL PIC ---
 with open(css_file) as f:
