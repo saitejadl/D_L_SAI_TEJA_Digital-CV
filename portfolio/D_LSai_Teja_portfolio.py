@@ -1,3 +1,4 @@
+#>                                      # https://saitejadl-d-l-sai-teja-di-portfoliod-lsai-teja-portfolio-3pw838.streamlit.app/
 from pathlib import Path
 import streamlit as st
 from PIL import Image
@@ -5,6 +6,7 @@ import json
 import requests
 from streamlit_lottie import st_lottie
 
+#-------Animation setup
 url1 = requests.get("https://lottie.host/ab8c54f3-73f2-474e-8f68-39b61d23773e/59pKiMFRkL.json")
 url2 = requests.get("https://lottie.host/9f77b3ed-249b-4a6b-b073-62fcab040355/icvb7xsEBV.json")
 url3 = requests.get("https://lottie.host/06f5e545-8301-4537-8906-a3b020124e47/0xwBQKW2an.json")
@@ -43,9 +45,11 @@ resume_file = current_dir / "assets" / "D L Sai Teja Resume.pdf"
 profile_pic = current_dir / "assets" / "Teja_profile.png"
 
 
-# --- GENERAL SETTINGS ---
+# --- GENERAL PAGE PROPERTIES | SETTINGS ---
 PAGE_TITLE = "Digital CV | LAKSHMI SAI TEJA DHARMADA"
 PAGE_ICON = "🧑‍💻"
+st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON,layout="wide")
+
 NAME = "LAKSHMI SAI TEJA DHARMADA"
 DESCRIPTION = """
 Data Scientist | Machine Learning Engineer | Data Engineer
@@ -56,16 +60,9 @@ SOCIAL_MEDIA = {
     "GitHub: https://github.com/saitejadl": "https://github.com/saitejadl",
     "Kaggle: https://www.kaggle.com/saitejadharmada": "https://www.kaggle.com/saitejadharmada"
 }
-PROJECTS = {
-    """🏆 Design and Fabrication of AI-Based Electric Vehicles: An Electric Vehicle (AIEV) that will drive semi-autonomously with the minimum human interface. Vehicle structure design for efficient load carry. Maintaining load balance by positioning mechanical, electrical, and electronic components. Installed a Raspberry Pi 4 Model B, a relay circuit, and ultrasonic sensors for detecting obstacles and navigating passengers in a safe direction. """:'.',
- 
-    """🏆 Personal Voice Assistant: A virtual assistant that can do various things such as tell the time, play music on YouTube, send messages on WhatsApp, search the web, and open applications on your computer, among others. It uses various APIs such as SpeechRecognition, Pyttsx3, PyWhatKit, Wikipedia, and OpenAI. It will prompt you for a password. If the password is correct, it will start listening for commands. You can ask it to perform various tasks, and it will respond accordingly. """:'.',
-    """🏆 Car Travels Tracking web application: Build a lightweight web app for streamlined driver location tracking and accessible driver details, prioritizing passenger safety and organizational efficiency. Integrated authentication features, allowing secure sign-in and sign-up processes for enhanced data protection and controlled access. Successfully deployed the app on Streamlit Cloud through GitHub integration, demonstrating proficiency in modern development practices.""":"."
-
-}
 
 
-st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON,layout="wide")
+
 
 
 # --- LOAD CSS, PDF & PROFIL PIC ---
@@ -76,11 +73,10 @@ with open(resume_file, "rb") as pdf_file:
 profile_pic = Image.open(profile_pic)
 
 
-# --- HERO SECTION ---
+# --- CONTACT INFORMATION SECTION ---
 col1, col2 = st.columns(2, gap="medium")
 with col1:
     st.image(profile_pic, width=230,caption='D L SAI TEJA')
-
 with col2:
     st.title(NAME)
     st.write(DESCRIPTION)
@@ -92,42 +88,41 @@ with col2:
     )
     st.write("📧", EMAIL)
 
-# --- SOCIAL LINKS ---
+# --- SOCIAL MEDIA LINKS ---
 st.write('\n')
 cols = st.columns([3,2,3])#len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
 
-anim1,anim2,anim3 = st.columns(3)
-with anim1:
-    st_lottie(url_json1)
-with anim2:
-    st_lottie(url_json2)
-with anim3:
-    st_lottie(url_json3)
+# anim1,anim2,anim3 = st.columns(3)
+# with anim1:
+#     st_lottie(url_json1)
+# with anim2:
+#     st_lottie(url_json2)
+# with anim3:
+#     st_lottie(url_json3)
     
+st.write('\n')
+st.write('\n')
+st.write('\n')
+st.write('\n')   
+
 # --- QUALIFICATIONS ---
-st.write('\n')
-st.write('\n')
-st.write('\n')
-st.write('\n')
 st.subheader("Qulifications")
 st.write(
     """
 - \t\t✔️ XII: Sri Chaitanya Juniour Collage \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCGPA: 9.1, YOP: 2018
 - \t\t✔️ UG: Bonam Venkata Chalamayya Institution of Technology and Science Amalapuram - JNTUK\t\t\t\t\tCGPA: 7.04, YOP: 2022.
 - \t\t✔️ PGP: Post Graduation Program in Computational Datascience (upGrad INSOFE)\t\t\t\t\t\t\t\tDuration: May 2022–April 2023
-- Excellent team player and displaying a strong sense of initiative on tasks
-- Strong communication and presentation skills
 """
 )
 
+st.write('\n')
+st.write('\n')
+st.write('\n')
+st.write('\n')
 
 # --- SKILLS ---
-st.write('\n')
-st.write('\n')
-st.write('\n')
-st.write('\n')
 skill1,skill2 = st.columns([4,2],gap='medium')
 with skill1:
     st.subheader("Hard Skills")
@@ -145,15 +140,17 @@ with skill1:
 with skill2:
     st_lottie(url_json4)
 
-# --- Compititions---
 st.write('\n')
 st.write('\n')
 st.write('\n')
 st.write('\n')
+
+# --- COMPITITIONS---
 st.subheader("                                                                                                  Competitions")
 comp1,comp2 = st.columns([3,6],gap='medium')
 with comp1:
-    st_lottie(url_json5)
+    # st_lottie(url_json5)
+    pass
 with comp2:
     # --- comp 3
     st.write('\n')
@@ -168,8 +165,7 @@ with comp2:
     - ► Constructed various machine learning regression models
     """
     )
-
-
+    
     # --- comp 1
     st.write("🚧", """**[Binary Classification with a Tabular Credit Card Fraud Dataset]** | Kaggle competition – Playground Series 3 Episode 4""")
     st.write("[Rank: 441th of 641 | Top 68%](https://www.kaggle.com/competitions/playground-series-s3e4/leaderboard?tab=public&search=D+Lakshmi+Sai+Teja)")
@@ -193,11 +189,17 @@ with comp2:
     """
     )
 
-# --- Projects & Accomplishments ---
 st.write('\n')
 st.write('\n')
 st.write('\n')
 st.write('\n')
+
+# --- PROJECTS & ACCOMPLISHMENTS ---
+PROJECTS = {
+    """🏆 Design and Fabrication of AI-Based Electric Vehicles: An Electric Vehicle (AIEV) that will drive semi-autonomously with the minimum human interface. Vehicle structure design for efficient load carry. Maintaining load balance by positioning mechanical, electrical, and electronic components. Installed a Raspberry Pi 4 Model B, a relay circuit, and ultrasonic sensors for detecting obstacles and navigating passengers in a safe direction. """:'.',
+    """🏆 Personal Voice Assistant: A virtual assistant that can do various things such as tell the time, play music on YouTube, send messages on WhatsApp, search the web, and open applications on your computer, among others. It uses various APIs such as SpeechRecognition, Pyttsx3, PyWhatKit, Wikipedia, and OpenAI. It will prompt you for a password. If the password is correct, it will start listening for commands. You can ask it to perform various tasks, and it will respond accordingly. """:'.',
+    """🏆 Car Travels Tracking web application: Build a lightweight web app for streamlined driver location tracking and accessible driver details, prioritizing passenger safety and organizational efficiency. Integrated authentication features, allowing secure sign-in and sign-up processes for enhanced data protection and controlled access. Successfully deployed the app on Streamlit Cloud through GitHub integration, demonstrating proficiency in modern development practices.""":"."
+}
 st.subheader("Projects and Accomplishments")
 st.write("---")
 
@@ -206,14 +208,15 @@ with proj1:
     for project, link in PROJECTS.items():
         st.write(f"[{project}]({link})")
 with proj2:
-    st_lottie(url_json6)
+    # st_lottie(url_json6)
+    pass
 
+st.write('\n')
+st.write('\n')
+st.write('\n')
+st.write('\n')
 
-# --- Hobbies ---
-st.write('\n')
-st.write('\n')
-st.write('\n')
-st.write('\n')
+# --- HOBBIES ---
 st.subheader("Hobbies and Interests")
 st.write("---")
 st.write("""
@@ -223,5 +226,4 @@ st.write("""
 - Gardening 🌱
     """)
 
-# https://saitejadl-d-l-sai-teja-di-portfoliod-lsai-teja-portfolio-3pw838.streamlit.app/
 # https://docs.google.com/presentation/d/1jrDigbMfp_wxzW7Eyu1jHRl0gkBYqv1c/edit?usp=share_link&ouid=110531620878687336760&rtpof=true&sd=true
