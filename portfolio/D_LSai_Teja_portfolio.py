@@ -162,14 +162,14 @@ with comp2:
     )
     
     # --- comp 1
-    st.write("🚧", """**Binary Classification with a Tabular Credit Card Fraud Dataset** | Kaggle competition – Playground Series 3 Episode 4""")
-    st.write("[Rank: 441th of 641 | Top 68%](https://www.kaggle.com/competitions/playground-series-s3e4/leaderboard?tab=public&search=D+Lakshmi+Sai+Teja)")
-    st.write(
-        """
-    - ► Purpose: To predict whether a credit card transaction is fraudulent or not
-    - ► Handled severely imbalanced data and built various supervised machine learning classification algorithms
-    """
-    )
+    # st.write("🚧", """**Binary Classification with a Tabular Credit Card Fraud Dataset** | Kaggle competition – Playground Series 3 Episode 4""")
+    # st.write("[Rank: 441th of 641 | Top 68%](https://www.kaggle.com/competitions/playground-series-s3e4/leaderboard?tab=public&search=D+Lakshmi+Sai+Teja)")
+    # st.write(
+    #     """
+    # - ► Purpose: To predict whether a credit card transaction is fraudulent or not
+    # - ► Handled severely imbalanced data and built various supervised machine learning classification algorithms
+    # """
+    # )
     
     # --- comp 2
     st.write('\n')
@@ -183,6 +183,23 @@ with comp2:
     - ► Constructed various machine learning classification models
     """
     )
+
+    #--- INSOFE
+    st.write('\n')
+    st.write("🚧", """**Merchant Fraudulent Detectio**""")
+    st.write("""**Objective**: Developed a predictive model to identify fraudulent merchants for an e-commerce platform, utilizing machine learning techniques and data analysis."""
+")
+    st.write("""
+- ► Leveraged Python and machine learning libraries to build a robust model that predicts whether a merchant is 
+fraudulent or not.
+- ► Conducted extensive exploratory data analysis using visualizations in Jupyter notebook, extracting valuable 
+insights from the dataset.
+- ► Processed and prepared data by handling missing values, encoding categorical variables, and standardizing 
+features.
+- ► Addressed class imbalance using the Synthetic Minority Over-sampling Technique (SMOTE) to improve 
+model performance.
+- ► Employed various classification algorithms, including Logistic Regression, Decision Trees, and Random 
+Forest, to predict merchant fraudulency."""
 
 st.write('\n')
 st.write('\n')
