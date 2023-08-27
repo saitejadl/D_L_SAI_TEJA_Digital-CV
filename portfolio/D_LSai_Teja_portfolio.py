@@ -173,7 +173,7 @@ with comp2:
     
     # --- comp 2
     st.write('\n')
-    st.write("🚧", """**:gray[Ordinal Regression with a Tabular Wine Quality Dataset]** | Kaggle competition – Playground Series 3 Episode 5""")
+    st.write("🚧", """**:cyan[Ordinal Regression with a Tabular Wine Quality Dataset]** | Kaggle competition – Playground Series 3 Episode 5""")
     st.write("[Rank: 255th of 901 | Top 29%](https://www.kaggle.com/competitions/playground-series-s3e5/leaderboard?search=D+Lakshmi+Sai+Teja)")
     st.write(
         """
