@@ -186,7 +186,7 @@ with comp2:
 
     #--- INSOFE
     st.write('\n')
-    st.write("🚧", """**Merchant Fraudulent Detectio**""")
+    st.write("🚧", """**Fraudulent Merchant Detection**""")
     st.write("""**Objective**: Developed a predictive model to identify fraudulent merchants for an e-commerce platform, utilizing machine learning techniques and data analysis.""")
     st.write("""
 - ► Leveraged Python and machine learning libraries to build a robust model that predicts whether a merchant is 
@@ -207,20 +207,19 @@ st.write('\n')
 
 # --- PROJECTS & ACCOMPLISHMENTS ---
 PROJECTS = {
-    """🏆 Design and Fabrication of AI-Based Electric Vehicles: An Electric Vehicle (AIEV) that will drive semi-autonomously with the minimum human interface. Vehicle structure design for efficient load carry. Maintaining load balance by positioning mechanical, electrical, and electronic components. Installed a Raspberry Pi 4 Model B, a relay circuit, and ultrasonic sensors for detecting obstacles and navigating passengers in a safe direction. """:'.',
-    """🏆 Personal Voice Assistant: A virtual assistant that can do various things such as tell the time, play music on YouTube, send messages on WhatsApp, search the web, and open applications on your computer, among others. It uses various APIs such as SpeechRecognition, Pyttsx3, PyWhatKit, Wikipedia, and OpenAI. It will prompt you for a password. If the password is correct, it will start listening for commands. You can ask it to perform various tasks, and it will respond accordingly. """:'.',
-    """🏆 Car Travels Tracking web application: Build a lightweight web app for streamlined driver location tracking and accessible driver details, prioritizing passenger safety and organizational efficiency. Integrated authentication features, allowing secure sign-in and sign-up processes for enhanced data protection and controlled access. Successfully deployed the app on Streamlit Cloud through GitHub integration, demonstrating proficiency in modern development practices.""":"."
+    """🏆 **Design and Fabrication of AI-Based Electric Vehicles**: An Electric Vehicle (AIEV) that will drive semi-autonomously with the minimum human interface. Vehicle structure design for efficient load carry. Maintaining load balance by positioning mechanical, electrical, and electronic components. Installed a Raspberry Pi 4 Model B, a relay circuit, and ultrasonic sensors for detecting obstacles and navigating passengers in a safe direction. """:'.',
+    """🏆 **Personal Voice Assistant**: A virtual assistant that can do various things such as tell the time, play music on YouTube, send messages on WhatsApp, search the web, and open applications on your computer, among others. It uses various APIs such as SpeechRecognition, Pyttsx3, PyWhatKit, Wikipedia, and OpenAI. It will prompt you for a password. If the password is correct, it will start listening for commands. You can ask it to perform various tasks, and it will respond accordingly. """:'.',
+    """🏆 **Car Travels Tracking web application**: Build a lightweight web app for streamlined driver location tracking and accessible driver details, prioritizing passenger safety and organizational efficiency. Integrated authentication features, allowing secure sign-in and sign-up processes for enhanced data protection and controlled access. Successfully deployed the app on Streamlit Cloud through GitHub integration, demonstrating proficiency in modern development practices.""":"."
 }
 st.subheader("Projects and Accomplishments")
 st.write("---")
 
-proj1, proj2 = st.columns([6,2],gap='medium')
-with proj1:
-    for project, link in PROJECTS.items():
-        st.write(f"[{project}]({link})")
-with proj2:
-    # st_lottie(url_json6)
-    pass
+# proj1, proj2 = st.columns([6,2],gap='medium')
+# with proj1:
+for project, link in PROJECTS.items():
+    st.write(f"[{project}]({link})")
+# with proj2:
+st_lottie(url_json6)
 
 st.write('\n')
 st.write('\n')
