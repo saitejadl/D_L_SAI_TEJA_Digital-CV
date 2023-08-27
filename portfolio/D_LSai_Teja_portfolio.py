@@ -11,7 +11,7 @@ url1 = requests.get("https://lottie.host/739bd416-d892-4d14-8075-182c5def45de/5k
 url2 = requests.get("https://lottie.host/ce8d70b6-a826-4876-8509-0f91011c853e/2ItJ1yfD0h.json")   #variance animation https://lottie.host/9f77b3ed-249b-4a6b-b073-62fcab040355/icvb7xsEBV.json
 url3 = requests.get("https://lottie.host/06f5e545-8301-4537-8906-a3b020124e47/0xwBQKW2an.json")
 url4 = requests.get("https://lottie.host/ae7aa634-b616-4613-8171-e2ebb18641c3/Z5GYzAxlYE.json")
-url5 = requests.get("https://lottie.host/c9229256-af20-43c2-af39-6679cb388246/vUskvmUNg3.json")   #https://lottie.host/69e4c56b-7222-4ffa-bb68-716163925661/AQWWG59u9Y.json")
+url5 = requests.get("https://lottie.host/5883855d-cc7f-41fe-9984-dd1e48854b59/BR5CsiM3s6.json")   #https://lottie.host/c9229256-af20-43c2-af39-6679cb388246/vUskvmUNg3.json")   #https://lottie.host/69e4c56b-7222-4ffa-bb68-716163925661/AQWWG59u9Y.json")
 url6 = requests.get("https://lottie.host/501a1638-888d-4d34-aa84-513513a38454/m23HdBnRK5.json")
 if url1.status_code == 200:
     url_json1 = url1.json()
