@@ -219,7 +219,7 @@ st.write("---")
 for project, link in PROJECTS.items():
     st.write(f"[{project}]({link})")
     
-proj1, proj2, proj3 = st.columns([1,2,1],gap='medium')
+proj1, proj2, proj3 = st.columns([1,1.5,1],gap='medium')
 with proj1:
     pass
 with proj2:
