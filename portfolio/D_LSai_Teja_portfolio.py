@@ -198,7 +198,7 @@ features.
 - ► Addressed class imbalance using the Synthetic Minority Over-sampling Technique (SMOTE) to improve 
 model performance.
 - ► Employed various classification algorithms, including Logistic Regression, Decision Trees, and Random 
-Forest, to predict merchant fraudulency."""
+Forest, to predict merchant fraudulency.""")
 
 st.write('\n')
 st.write('\n')
