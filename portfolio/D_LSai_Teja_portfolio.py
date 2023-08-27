@@ -186,7 +186,7 @@ with comp2:
 
     #--- INSOFE
     st.write('\n')
-    st.write("🚧", """**:pink[Fraudulent Merchant Detection]**""")
+    st.write("🚧", """**:indigo[Fraudulent Merchant Detection]**""")
     st.write("""**Objective**: Developed a predictive model to identify fraudulent merchants for an e-commerce platform, utilizing machine learning techniques and data analysis.""")
     st.write("""
 - ► Leveraged Python and machine learning libraries to build a robust model that predicts whether a merchant is 
