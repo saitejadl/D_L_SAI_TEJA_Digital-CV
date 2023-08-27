@@ -146,11 +146,10 @@ st.subheader("                                                                  
 comp1,comp2 = st.columns([3,6],gap='medium')
 with comp1:
     st_lottie(url_json5)
-    pass
 with comp2:
     # --- comp 3
     st.write('\n')
-    st.write("🚧","[Regression with a Tabular Paris Housing Price Dataset] | Kaggle competition – Playground Series 3 Episode 6")
+    st.write("🚧","""**Regression with a Tabular Paris Housing Price Dataset** | Kaggle competition – Playground Series 3 Episode 6""")
     
     st.markdown("""[**:blue[Rank: 40th of 703 | Top 6%]**](https://www.kaggle.com/competitions/playground-series-s3e6/leaderboard?search=sai+teja+dharmada)""")
     st.write(
@@ -163,7 +162,7 @@ with comp2:
     )
     
     # --- comp 1
-    st.write("🚧", """**[Binary Classification with a Tabular Credit Card Fraud Dataset]** | Kaggle competition – Playground Series 3 Episode 4""")
+    st.write("🚧", """**Binary Classification with a Tabular Credit Card Fraud Dataset** | Kaggle competition – Playground Series 3 Episode 4""")
     st.write("[Rank: 441th of 641 | Top 68%](https://www.kaggle.com/competitions/playground-series-s3e4/leaderboard?tab=public&search=D+Lakshmi+Sai+Teja)")
     st.write(
         """
@@ -174,7 +173,7 @@ with comp2:
     
     # --- comp 2
     st.write('\n')
-    st.write("🚧", """[Ordinal Regression with a Tabular Wine Quality Dataset] | Kaggle competition – Playground Series 3 Episode 5""")
+    st.write("🚧", """**Ordinal Regression with a Tabular Wine Quality Dataset** | Kaggle competition – Playground Series 3 Episode 5""")
     st.write("[Rank: 255th of 901 | Top 29%](https://www.kaggle.com/competitions/playground-series-s3e5/leaderboard?search=D+Lakshmi+Sai+Teja)")
     st.write(
         """
