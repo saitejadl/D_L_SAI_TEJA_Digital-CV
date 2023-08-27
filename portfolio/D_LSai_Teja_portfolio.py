@@ -149,7 +149,7 @@ with comp1:
 with comp2:
     # --- comp 3
     st.write('\n')
-    st.write("🚧","""**Regression with a Tabular Paris Housing Price Dataset** | Kaggle competition – Playground Series 3 Episode 6""")
+    st.write("🚧","""**:red[Regression with a Tabular Paris Housing Price Dataset]** | Kaggle competition – Playground Series 3 Episode 6""")
     
     st.markdown("""[**:blue[Rank: 40th of 703 | Top 6%]**](https://www.kaggle.com/competitions/playground-series-s3e6/leaderboard?search=sai+teja+dharmada)""")
     st.write(
@@ -214,11 +214,8 @@ PROJECTS = {
 st.subheader("Projects and Accomplishments")
 st.write("---")
 
-# proj1, proj2 = st.columns([6,2],gap='medium')
-# with proj1:
 for project, link in PROJECTS.items():
-    st.write(f"[{project}]({link})")
-    
+    st.write(f"[{project}]({link})")  
 proj1, proj2, proj3 = st.columns([1,1.5,1],gap='medium')
 with proj1:
     pass
