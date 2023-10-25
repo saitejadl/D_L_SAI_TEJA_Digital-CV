@@ -52,7 +52,7 @@ st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON,layout="wide")
 
 NAME = "LAKSHMI SAI TEJA DHARMADA"
 DESCRIPTION = """
-Data Scientist | Machine Learning Engineer | Data Engineer
+Data Scientist
 """
 EMAIL = "dlsaiteja2822@gmail.com"
 SOCIAL_MEDIA = {
@@ -104,7 +104,7 @@ st.write('\n')
 st.write('\n')   
 
 # --- QUALIFICATIONS ---
-st.subheader("Qulifications")
+st.subheader("Qualifications")
 st.write(
     """
 - \t\t✔️ XII: Sri Chaitanya Juniour Collage \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCGPA: 9.1, YOP: 2018
@@ -121,7 +121,7 @@ st.write('\n')
 # --- SKILLS ---
 skill1,skill2 = st.columns([4,2],gap='medium')
 with skill1:
-    st.subheader("Hard Skills")
+    st.subheader("Skills")
     st.write(
         """
     -	👩‍💻Programming: Python (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn), C, SQL
