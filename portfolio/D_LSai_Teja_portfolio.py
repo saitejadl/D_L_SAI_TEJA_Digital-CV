@@ -86,7 +86,7 @@ with col2:
 
 # --- SOCIAL MEDIA LINKS ---
 st.write('\n')
-cols = st.columns([3,2,2])#len(SOCIAL_MEDIA))
+cols = st.columns([3,2,3])#len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"""[{platform}]({link})""")
 
@@ -107,7 +107,7 @@ st.write('\n')
 st.subheader("Qualifications")
 st.write(
     """
-✔️ XII: Sri Chaitanya Juniour Collage""","""                                                           ""","""CGPA: 9.1, YOP: 2018\n
+✔️ XII: Sri Chaitanya Juniour Collage  CGPA: 9.1, YOP: 2018\n
 ✔️ UG: Bonam Venkata Chalamayya Institution of Technology and Science Amalapuram - JNTUK\t\t\t\t\tCGPA: 7.04, YOP: 2022.\n
 ✔️ PGP: Post Graduation Program in Computational Datascience (upGrad INSOFE)\t\t\t\t\t\t\t\tDuration: May 2022–April 2023\n
 """
