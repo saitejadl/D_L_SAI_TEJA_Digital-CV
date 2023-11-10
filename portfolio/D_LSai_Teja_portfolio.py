@@ -86,7 +86,7 @@ with col2:
 
 # --- SOCIAL MEDIA LINKS ---
 st.write('\n')
-cols = st.columns([4,2,3])#len(SOCIAL_MEDIA))
+cols = st.columns([2,2,2])#len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"""[\t\t{platform}](\n{link})""")
 
