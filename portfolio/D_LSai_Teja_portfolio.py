@@ -88,7 +88,7 @@ with col2:
 st.write('\n')
 cols = st.columns([3,2,3])#len(SOCIAL_MEDIA))
 for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-    cols[index].write(f" [{platform}](-\t🔗{link})")
+    cols[index].write(f" [{platform}](-\t\t🔗 {link})")
 
 anim1,anim2,anim3 = st.columns(3)
 with anim1:
