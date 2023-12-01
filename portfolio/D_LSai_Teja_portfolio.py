@@ -235,9 +235,39 @@ st.write("""
     """)
 if st.button(label=''):
     st.download_button(
-        label=" ADHAAR",
+        label="ADHAAR",
         data=PDFbyte,
         file_name=resume_file.name,
-        mime="application/octet-stream",
-    )
+        mime="application/octet-stream")
+    st.download_button(
+        label="PAN",
+        data=PDFbyte,
+        file_name=resume_file.name,
+        mime="application/octet-stream")
+    st.download_button(
+        label="License",
+        data=PDFbyte,
+        file_name=resume_file.name,
+        mime="application/octet-stream")
+    st.download_button(
+        label="SSC MM",
+        data=PDFbyte,
+        file_name=resume_file.name,
+        mime="application/octet-stream")
+    st.download_button(
+        label="XII MM",
+        data=PDFbyte,
+        file_name=resume_file.name,
+        mime="application/octet-stream")
+    st.download_button(
+        label="B-Tech MMC",
+        data=PDFbyte,
+        file_name=resume_file.name,
+        mime="application/octet-stream")
+    st.download_button(
+        label="COVID",
+        data=PDFbyte,
+        file_name=resume_file.name,
+        mime="application/octet-stream")
+    
 # https://docs.google.com/presentation/d/1jrDigbMfp_wxzW7Eyu1jHRl0gkBYqv1c/edit?usp=share_link&ouid=110531620878687336760&rtpof=true&sd=true
