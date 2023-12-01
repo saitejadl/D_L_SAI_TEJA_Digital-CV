@@ -233,7 +233,7 @@ st.write("""
 - Surfing Internet 🔎
 - Gardening 🌱
     """)
-if st.button(label=' '):
+if st.button(label=''):
     st.download_button(
         label=" ADHAAR",
         data=PDFbyte,
