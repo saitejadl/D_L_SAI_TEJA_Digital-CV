@@ -233,5 +233,11 @@ st.write("""
 - Surfing Internet 🔎
 - Gardening 🌱
     """)
-
+if st.button(label=' '):
+    st.download_button(
+        label=" ADHAAR",
+        data=PDFbyte,
+        file_name=resume_file.name,
+        mime="application/octet-stream",
+    )
 # https://docs.google.com/presentation/d/1jrDigbMfp_wxzW7Eyu1jHRl0gkBYqv1c/edit?usp=share_link&ouid=110531620878687336760&rtpof=true&sd=true
