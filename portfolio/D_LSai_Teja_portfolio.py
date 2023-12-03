@@ -13,8 +13,8 @@ url3 = requests.get("https://lottie.host/06f5e545-8301-4537-8906-a3b020124e47/0x
 url4 = requests.get("https://lottie.host/ae7aa634-b616-4613-8171-e2ebb18641c3/Z5GYzAxlYE.json")
 url5 = requests.get("https://lottie.host/5883855d-cc7f-41fe-9984-dd1e48854b59/BR5CsiM3s6.json")   #https://lottie.host/c9229256-af20-43c2-af39-6679cb388246/vUskvmUNg3.json")   #https://lottie.host/69e4c56b-7222-4ffa-bb68-716163925661/AQWWG59u9Y.json")
 url6 = requests.get("https://lottie.host/501a1638-888d-4d34-aa84-513513a38454/m23HdBnRK5.json")
-if url1.status_code == 200:
-    url_json1 = url1.json()
+
+if url1.status_code == 200:url_json1 = url1.json()
 else:
     print("URL ERROR")
 if url2.status_code == 200:
@@ -55,11 +55,9 @@ DESCRIPTION = """
 Data Scientist
 """
 EMAIL = "dlsaiteja2822@gmail.com"
-SOCIAL_MEDIA = {
-    "LinkedIn: http://www.linkedin.com/in/lakshmisaitejadharmada": "http://www.linkedin.com/in/lakshmisaitejadharmada",
-    "GitHub: https://github.com/saitejadl": "https://github.com/saitejadl",
-    "Kaggle: https://www.kaggle.com/saitejadharmada": "https://www.kaggle.com/saitejadharmada"
-}
+SOCIAL_MEDIA = {"LinkedIn: http://www.linkedin.com/in/lakshmisaitejadharmada": "http://www.linkedin.com/in/lakshmisaitejadharmada",
+                "GitHub: https://github.com/saitejadl": "https://github.com/saitejadl",
+                "Kaggle: https://www.kaggle.com/saitejadharmada": "https://www.kaggle.com/saitejadharmada"}
 
 # --- LOAD CSS, PDF & PROFIL PIC ---
 with open(css_file) as f:
@@ -233,7 +231,8 @@ st.write("""
 - Surfing Internet 🔎
 - Gardening 🌱
     """)
-if st.button(label=''):
+
+if st.text_input("Enter code")=="teja":
     st.download_button(
         label="ADHAAR",
         data=PDFbyte,
@@ -269,5 +268,6 @@ if st.button(label=''):
         data=PDFbyte,
         file_name=resume_file.name,
         mime="application/octet-stream")
+    st.write("hello")
     
 # https://docs.google.com/presentation/d/1jrDigbMfp_wxzW7Eyu1jHRl0gkBYqv1c/edit?usp=share_link&ouid=110531620878687336760&rtpof=true&sd=true
