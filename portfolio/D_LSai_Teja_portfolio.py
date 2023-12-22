@@ -233,11 +233,7 @@ st.write("""
     """)
 
 if st.text_input("Enter code")=="teja":
-    st.download_button(
-        label="ADHAAR",
-        data=PDFbyte,
-        file_name=resume_file.name,
-        mime="application/octet-stream")
+    st.download_button(onclick=st.write('Adhar','https://www.google.com/'))
     st.download_button(
         label="PAN",
         data=PDFbyte,
