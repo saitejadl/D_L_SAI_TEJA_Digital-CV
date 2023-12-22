@@ -233,7 +233,7 @@ st.write("""
     """)
 
 if st.text_input("Enter code")=="teja":
-    st.download_button(onclick=st.markdown("""[**:blue[ADHAAR]**](https://www.google.com/)"""))
+    st.markdown("""[**:blue[ADHAAR]**](https://www.google.com/)""")
     st.download_button(
         label="PAN",
         data=PDFbyte,
