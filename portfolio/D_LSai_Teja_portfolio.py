@@ -201,5 +201,5 @@ st.write("""- Badminton 🏸
             - Gardening 🌱""")
 
 if st.text_input("Enter code")=="teja":
-    st.markdown("**BLUE[Hello]**":"www.google.co.in")
+    st.markdown("**BLUE[Hello]**:Hello":"www.google.co.in")
 # https://docs.google.com/presentation/d/1jrDigbMfp_wxzW7Eyu1jHRl0gkBYqv1c/edit?usp=share_link&ouid=110531620878687336760&rtpof=true&sd=true
