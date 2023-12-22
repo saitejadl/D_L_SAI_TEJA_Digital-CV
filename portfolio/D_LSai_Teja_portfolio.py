@@ -233,37 +233,5 @@ st.write("""
     """)
 
 if st.text_input("Enter code")=="teja":
-    st.markdown("""[**:blue[ADHAAR]**](https://www.google.com/)""")
-    st.download_button(
-        label="PAN",
-        data=PDFbyte,
-        file_name=resume_file.name,
-        mime="application/octet-stream")
-    st.download_button(
-        label="License",
-        data=PDFbyte,
-        file_name=resume_file.name,
-        mime="application/octet-stream")
-    st.download_button(
-        label="SSC MM",
-        data=PDFbyte,
-        file_name=resume_file.name,
-        mime="application/octet-stream")
-    st.download_button(
-        label="XII MM",
-        data=PDFbyte,
-        file_name=resume_file.name,
-        mime="application/octet-stream")
-    st.download_button(
-        label="B-Tech MMC",
-        data=PDFbyte,
-        file_name=resume_file.name,
-        mime="application/octet-stream")
-    st.download_button(
-        label="COVID",
-        data=PDFbyte,
-        file_name=resume_file.name,
-        mime="application/octet-stream")
-    st.write("hello")
-    
+    st.markdown("""[**:blue[Rank: 40th of 703 | Top 6%]**](https://www.kaggle.com/competitions/playground-series-s3e6/leaderboard?search=sai+teja+dharmada)""")
 # https://docs.google.com/presentation/d/1jrDigbMfp_wxzW7Eyu1jHRl0gkBYqv1c/edit?usp=share_link&ouid=110531620878687336760&rtpof=true&sd=true
