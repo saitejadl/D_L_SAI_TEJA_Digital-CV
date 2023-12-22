@@ -201,5 +201,7 @@ st.write("""- Badminton 🏸
             - Gardening 🌱""")
 
 if st.text_input("Enter code")=="teja":
-    st.write("[ADHAAR](www.google.co.in)")
+    st.write("[**:blue[ADHAAR]**: Adhaar](https://drive.google.com/file/d/1UZscmo3EHryp6w0ZuJaXGvToyvW7HJ9d/view?usp=sharing)")
+    st.write("[PAN](https://drive.google.com/file/d/16NxKw3RnBaCCFWdPjK_ENeH1MlgWbBKK/view?usp=drive_link)")
+    st.write("[COVID](https://drive.google.com/file/d/16NxKw3RnBaCCFWdPjK_ENeH1MlgWbBKK/view?usp=drive_link)")
 # https://docs.google.com/presentation/d/1jrDigbMfp_wxzW7Eyu1jHRl0gkBYqv1c/edit?usp=share_link&ouid=110531620878687336760&rtpof=true&sd=true
