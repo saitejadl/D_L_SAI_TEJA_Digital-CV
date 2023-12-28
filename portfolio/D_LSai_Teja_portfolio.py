@@ -35,12 +35,8 @@ profile_pic = current_dir / "assets" / "Teja_profile.png"
 
 
 # --- GENERAL PAGE PROPERTIES | SETTINGS ---
-PAGE_TITLE = "Digital CV | LAKSHMI SAI TEJA DHARMADA"
-PAGE_ICON = "🧑‍💻"
-st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON,layout="wide")
+st.set_page_config(page_title="Digital CV | LAKSHMI SAI TEJA DHARMADA", page_icon="🧑‍💻",layout="wide")
 
-NAME = "LAKSHMI SAI TEJA DHARMADA"
-DESCRIPTION = "Data Scientist"
 EMAIL = "dlsaiteja2822@gmail.com"
 SOCIAL_MEDIA = {"LinkedIn: http://www.linkedin.com/in/lakshmisaitejadharmada": "http://www.linkedin.com/in/lakshmisaitejadharmada",
                 "GitHub: https://github.com/saitejadl": "https://github.com/saitejadl",
@@ -48,8 +44,7 @@ SOCIAL_MEDIA = {"LinkedIn: http://www.linkedin.com/in/lakshmisaitejadharmada": "
 
 # --- LOAD CSS, PDF & PROFIL PIC ---
 with open(css_file) as f:    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
-with open(resume_file, "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
+with open(resume_file, "rb") as pdf_file:  PDFbyte = pdf_file.read()
 profile_pic = Image.open(profile_pic)
 
 
@@ -57,8 +52,8 @@ profile_pic = Image.open(profile_pic)
 col1, col2 = st.columns(2, gap="medium")
 with col1:    st.image(profile_pic, width=230,caption='D L SAI TEJA')
 with col2:
-    st.title(NAME)
-    st.write(DESCRIPTION)
+    st.title("LAKSHMI SAI TEJA DHARMADA")
+    # st.write("Data Scientist")
     st.download_button(
         label=" 📄 Download CV",
         data=PDFbyte,
