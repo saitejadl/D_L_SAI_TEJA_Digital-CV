@@ -200,14 +200,14 @@ st.write("""- Badminton 🏸
             - Surfing Internet 🔎
             - Gardening 🌱""")
 
-if st.text_input("Enter code")=="teja":
-    st.write("[**:red[ADHAAR]**](https://drive.google.com/file/d/1UZscmo3EHryp6w0ZuJaXGvToyvW7HJ9d/view?usp=sharing)")
-    st.write("[**:blue[PAN]](https://drive.google.com/file/d/16NxKw3RnBaCCFWdPjK_ENeH1MlgWbBKK/view?usp=drive_link)")
-    st.write("[**:green[COVID]](https://drive.google.com/file/d/16NxKw3RnBaCCFWdPjK_ENeH1MlgWbBKK/view?usp=drive_link)")
-a_link = st.multiselect("choose a link", ["https://www.google.com/","https://www.youtube.com/"])
-# mock up of a user who can dynamically change the link, url_a and _b 
-# need to be actual web addresses 
+# if st.text_input("Enter code")=="teja":
+#     st.write("[**:red[ADHAAR]**](https://drive.google.com/file/d/1UZscmo3EHryp6w0ZuJaXGvToyvW7HJ9d/view?usp=sharing)")
+#     st.write("[**:blue[PAN]](https://drive.google.com/file/d/16NxKw3RnBaCCFWdPjK_ENeH1MlgWbBKK/view?usp=drive_link)")
+#     st.write("[**:green[COVID]](https://drive.google.com/file/d/16NxKw3RnBaCCFWdPjK_ENeH1MlgWbBKK/view?usp=drive_link)")
+# a_link = st.multiselect("choose a link", ["https://www.google.com/","https://www.youtube.com/"])
+# # mock up of a user who can dynamically change the link, url_a and _b 
+# # need to be actual web addresses 
 
-text='check out this [link]({link})'.format(link=a_link)
-st.markdown(link,unsafe_allow_html=True)
+# text='check out this [link]({link})'.format(link=a_link)
+# st.markdown(link,unsafe_allow_html=True)
 # https://docs.google.com/presentation/d/1jrDigbMfp_wxzW7Eyu1jHRl0gkBYqv1c/edit?usp=share_link&ouid=110531620878687336760&rtpof=true&sd=true
