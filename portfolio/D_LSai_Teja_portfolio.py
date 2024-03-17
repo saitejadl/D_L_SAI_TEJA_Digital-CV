@@ -31,7 +31,7 @@ else:    print("URL ERROR")
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "assets" / "D L Sai Teja Resume.pdf"
-profile_pic = current_dir / "assets" / "Teja_profile.png"
+profile_pic = current_dir / "assets" / "profile pic 1-modified.png"
 
 
 # --- GENERAL PAGE PROPERTIES | SETTINGS ---
@@ -96,12 +96,12 @@ skill1,skill2 = st.columns([4,2],gap='medium')
 with skill1:
     st.subheader("Skills")
     st.write("""
-    -	👩‍💻Programming: Python (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn), C, SQL
-    -	📊Data Analysis: Data Cleaning, Statistical Modeling, Data Visualization 
+    -	👩‍💻Programming     : Python, C, SQL
+    -	📊Data Analysis   : Data Cleaning, Statistical Modeling, Data Visualization 
     -	💻Machine Learning: Supervised learning, Unsupervised learning
-    -	🧿Deep Learning: ANN, CNN, RNN, [CV, NLP]
-    -	🪄Tools: My SQL, Git, Docker, Excel, Tableau
-    -   ⚙️OS: Windows, Linux
+    -	🧿Deep Learning   : ANN, CNN, RNN, [CV, NLP]
+    -	🪄Tools           : My SQL, Git, Docker, Excel, Tableau
+    -   ⚙️OS            : Windows, Linux
     -   ☁️cloud services: AZURE
             """)
 with skill2:    st_lottie(url_json4)
