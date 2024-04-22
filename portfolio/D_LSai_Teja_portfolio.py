@@ -99,10 +99,7 @@ with skill1:
     -	👩‍💻Programming     : Python, C, SQL
     -	📊Data Analysis   : Data Cleaning, Statistical Modeling, Data Visualization 
     -	💻Machine Learning: Supervised learning, Unsupervised learning
-    -	🧿Deep Learning   : ANN, CNN, RNN, [CV, NLP]
-    -	🪄Tools           : My SQL, Git, Docker, Excel, Tableau
-    -   ⚙️OS            : Windows, Linux
-    -   ☁️cloud services: AZURE
+    -	🪄Tools           : My SQL, Git, Docker, Excel, Power BI
             """)
 with skill2:    st_lottie(url_json4)
 
