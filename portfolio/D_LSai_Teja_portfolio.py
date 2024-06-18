@@ -84,6 +84,7 @@ st.write("""
 ✔️ XII: Sri Chaitanya Juniour Collage  CGPA: 9.1, YOP: 2018\n
 ✔️ UG: Bonam Venkata Chalamayya Institution of Technology and Science Amalapuram - JNTUK\t\t\t\t\tCGPA: 7.04, YOP: 2022.\n
 ✔️ PGP: Post Graduation Program in Computational Datascience (upGrad INSOFE)\t\t\t\t\t\t\t\tDuration: May 2022–April 2023\n
+✔️ Fellowship : JRF in National Institute of Technology(NIT) Calicut\t\t\t\t\t\t\t\tDuration: June 2024–Dec 2024\n
         """)
 
 st.write('\n')
@@ -96,10 +97,13 @@ skill1,skill2 = st.columns([4,2],gap='medium')
 with skill1:
     st.subheader("Skills")
     st.write("""
-    -	👩‍💻Programming     : Python, C, SQL
-    -	📊Data Analysis   : Data Cleaning, Statistical Modeling, Data Visualization 
-    -	💻Machine Learning: Supervised learning, Unsupervised learning
-    -	🪄Tools           : My SQL, Git, Docker, Excel, Power BI
+    -	👩‍💻Programming      : Python, C, SQL
+    -	📊Data Analysis    : Data Cleaning, Statistical Modeling, Data Visualization 
+    -	💻Machine Learning : Supervised learning, Unsupervised learning
+    -	🧿Deep Learning    : ANN, CNN, RNN, [CV, NLP]
+    -	🪄Tools              : My SQL, Git, Docker, Excel, Tableau
+    - ⚙️OS               : Windows, Linux
+    - ☁️cloud services   : AZURE
             """)
 with skill2:    st_lottie(url_json4)
 
@@ -109,7 +113,10 @@ st.write('\n')
 st.write('\n')
 
 # --- COMPITITIONS---
-st.subheader("                                                                                                  Competitions")
+_, com, _ = st.columns([1,2,1)
+com.subheader("Competitions")
+st.write("---")
+
 comp1,comp2 = st.columns([2,6],gap='medium')
 with comp1:    st_lottie(url_json5)
 with comp2:
@@ -174,7 +181,8 @@ st.write('\n')
 PROJECTS = {"""🏆 **:blue[Design and Fabrication of AI-Based Electric Vehicles]**: An Electric Vehicle (AIEV) that will drive semi-autonomously with the minimum human interface. Vehicle structure design for efficient load carry. Maintaining load balance by positioning mechanical, electrical, and electronic components. Installed a Raspberry Pi 4 Model B, a relay circuit, and ultrasonic sensors for detecting obstacles and navigating passengers in a safe direction. """:'.',
             """🏆 **:orange[Personal Voice Assistant]**: A virtual assistant that can do various things such as tell the time, play music on YouTube, send messages on WhatsApp, search the web, and open applications on your computer, among others. It uses various APIs such as SpeechRecognition, Pyttsx3, PyWhatKit, Wikipedia, and OpenAI. It will prompt you for a password. If the password is correct, it will start listening for commands. You can ask it to perform various tasks, and it will respond accordingly. """:'.',
             """🏆 **:green[Car Travels Tracking web application]**: Build a lightweight web app for streamlined driver location tracking and accessible driver details, prioritizing passenger safety and organizational efficiency. Integrated authentication features, allowing secure sign-in and sign-up processes for enhanced data protection and controlled access. Successfully deployed the app on Streamlit Cloud through GitHub integration, demonstrating proficiency in modern development practices. """:"."}
-st.subheader("Projects and Accomplishments")
+_, pro_accom, _ = st.columns([1,2,1)
+pro_accom.subheader("Projects and Accomplishments")
 st.write("---")
 
 for project, link in PROJECTS.items():
@@ -186,7 +194,6 @@ with proj3:    pass
 
 # --- HOBBIES ---
 st.subheader("Hobbies and Interests")
-st.write("---")
 st.write("""- Badminton 🏸
             - Programming 💻
             - Surfing Internet 🔎
