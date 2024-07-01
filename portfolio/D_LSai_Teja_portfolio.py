@@ -101,7 +101,7 @@ with skill1:
     -	📊Data Analysis    : Data Cleaning, Statistical Modeling, Data Visualization 
     -	💻Machine Learning : Supervised learning, Unsupervised learning
     -	🧿Deep Learning    : ANN, CNN, RNN, [CV, NLP]
-    -	🪄Tools              : My SQL, Git, Docker, Excel, Tableau
+    -	🛠Tools             : My SQL, Git, Docker, Excel, Tableau
     - ⚙️OS               : Windows, Linux
     - ☁️cloud services   : AZURE
             """)
