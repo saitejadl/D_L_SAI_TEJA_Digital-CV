@@ -84,7 +84,7 @@ st.write("""
 ✔️ XII: Sri Chaitanya Juniour Collage  CGPA: 9.1, YOP: 2018\n
 ✔️ UG: Bonam Venkata Chalamayya Institution of Technology and Science Amalapuram - JNTUK\t\t\t\t\tCGPA: 7.04, YOP: 2022.\n
 ✔️ PGP: Post Graduation Program in Computational Datascience (upGrad INSOFE)\t\t\t\t\t\t\t\tDuration: May 2022–April 2023\n
-✔️ Fellowship : JRF in National Institute of Technology(NIT) Calicut\t\t\t\t\t\t\t\tDuration: June 2024–Dec 2024\n
+# ✔️ Fellowship : JRF in National Institute of Technology(NIT) Calicut\t\t\t\t\t\t\t\tDuration: June 2024–Dec 2024\n
         """)
 
 st.write('\n')
